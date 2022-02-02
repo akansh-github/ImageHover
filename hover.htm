@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hover.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:-webkit-linear-gradient(left, #e4e711, #ec1b0c,purple)
+
+}
+.card{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.212);
+    background: white;
+    
+    
+    
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all .4s;
+    
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    z-index: 10;
+    transition: all .4s;
+}
+.card:hover img{
+    margin-top: -55px;
+    
+}
+.card:hover{
+    width: 220px;
+    height:240px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+}
+.card::before{
+    content: ' Akansh Bende  \a Computer Science  \a GECA';
+
+    letter-spacing: 0.08rem;
+    position: absolute;
+    bottom: 8px;
+    left: 30px;
+    color: rgb(51, 51, 51);
+    font-size: 1em;
+    font-family: 'Poppins'/*'Font Awesome 5 Free'*/;
+    font-weight: 500;
+    
+   
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img  src="akansh3.jpg">
+      
+    </div>
+</body>
+</html>
